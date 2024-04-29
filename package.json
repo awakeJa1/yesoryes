@@ -1,0 +1,21 @@
+{
+  "name": "yesoryes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "daisyui": "^4.10.2",
+    "express": "^4.19.2",
+    "git": "^0.1.5",
+    "react": "^18.3.1",
+    "server.js": "^1.0.0"
+  }
+}
