@@ -38,6 +38,26 @@ app.get('/perfil', (req, res) => {
     }
 });
 
+app.get('/novidades', (req, res) => {
+    // Requerindo e executando o arquivo tela.js
+    try {
+        require('./src/novidades.js')(req, res);
+    } catch (error) {
+        console.error('Erro ao executar o código do arquivo tela.js:', error);
+        res.status(500).send('Erro interno do servidor');
+    }
+});
+
+app.get('/saibamais', (req, res) => {
+    // Requerindo e executando o arquivo tela.js
+    try {
+        require('./src/saibamais.js')(req, res);
+    } catch (error) {
+        console.error('Erro ao executar o código do arquivo tela.js:', error);
+        res.status(500).send('Erro interno do servidor');
+    }
+});
+
 // Definindo a porta do servidor
 const PORT = process.env.PORT || 3000;
 
