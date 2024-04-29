@@ -28,6 +28,16 @@ app.get('/cadastro', (req, res) => {
     }
 });
 
+app.get('/perfil', (req, res) => {
+    // Requerindo e executando o arquivo tela.js
+    try {
+        require('./src/perfil.js')(req, res);
+    } catch (error) {
+        console.error('Erro ao executar o código do arquivo tela.js:', error);
+        res.status(500).send('Erro interno do servidor');
+    }
+});
+
 // Definindo a porta do servidor
 const PORT = process.env.PORT || 3000;
 
